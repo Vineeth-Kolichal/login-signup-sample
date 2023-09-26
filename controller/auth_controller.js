@@ -20,10 +20,7 @@ export const signup = async (req, res) => {
         });
     } catch (error) {
         res.status(400).json({ message: "Error while sign up", error: error });
-
     }
-
-
 }
 
 export const login = async(req, res) => {

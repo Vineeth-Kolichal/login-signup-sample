@@ -18,6 +18,7 @@ db.on('error',(error)=>console.log(error));
 db.once('open',()=>console.log('database connected'));
 
 app.use(express.json());
+
 app.use(morgan('dev'));
 
 app.use(session({secret:"key",cookie:{maxAge:60000}}))
